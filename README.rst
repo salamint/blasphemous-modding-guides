@@ -1,4 +1,4 @@
-Template for the Read the Docs tutorial
+Blasphemous Modding Guides
 =======================================
 
 This GitHub template includes fictional Python library
