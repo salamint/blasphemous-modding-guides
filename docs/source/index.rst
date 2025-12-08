@@ -14,26 +14,46 @@ I developed, as well as some tutorials for frequent operations and FAQs.
 
    This project is under active development.
 
-Contents
+What is modding?
+--------
+Modding is the practice of injecting new code or modifying existing code inside
+the executable of a game. This allows developers to add features and content, or
+tweak existing features.
+
+General recommendations
+--------
+No matter what is said in these guides, please keep in mind they have been
+written by someone with a small amount of experience in modding (for now).
+
+I really advise you to join the `Blasphemous Modding server<https://discord.gg/aBe22Q7d5A>`_,
+and ask questions to more experienced modders there.
+
+Table of contents
 --------
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: General information
 
    index
+   faq
 
 .. toctree::
    :caption: Running mods
 
-   running-mods/blas1
-   running-mods/blas2
+   running-mods/the-installer
+   running-mods/the-cli
+   running-mods/manual-installation
 
 .. toctree::
-   :caption: Creating mods
+   :caption: Creating mods for Blasphemous 1
 
-   creating-mods/blas1
-   creating-mods/blas2
+   creating-mods-b1/index
+
+.. toctree::
+   :caption: Creating mods for Blasphemous 2
+
+   creating-mods-b2/index
 
 .. toctree::
    :caption: Mod documentations
