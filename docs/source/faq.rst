@@ -11,3 +11,6 @@ create and publich your first mod, explanations on how modding work, etc.
 However, not every part of the code can be modded with the same difficulty.
 If you want to begin your modding journey, I recommend you to think about a mod
 that would not add or fundamentaly change a big aspect of the game.
+
+Test
+--------
