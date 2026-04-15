@@ -39,6 +39,7 @@ Table of contents
    faq
 
 .. toctree::
+   :maxdepth: 1
    :caption: Running mods
 
    running-mods/the-installer
@@ -46,16 +47,19 @@ Table of contents
    running-mods/manual-installation
 
 .. toctree::
+   :maxdepth: 1
    :caption: Creating mods for Blasphemous 1
 
    creating-mods-b1/index
 
 .. toctree::
+   :maxdepth: 1
    :caption: Creating mods for Blasphemous 2
 
    creating-mods-b2/index
 
 .. toctree::
+   :maxdepth: 1
    :caption: Mod documentations
 
    mod-documentations/weapon-events-framework
