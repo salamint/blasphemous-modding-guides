@@ -1,3 +1,0 @@
-Manual installation of mods
-===================================
-

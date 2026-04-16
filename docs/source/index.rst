@@ -2,21 +2,13 @@ Welcome
 ===================================
 
 .. toctree::
-   :caption: General information
-   :maxdepth: 3
-   :hidden:
-
-   index
-   faq
-
-.. toctree::
    :caption: Running mods
    :maxdepth: 3
    :hidden:
 
-   running-mods/the-installer
-   running-mods/the-cli
-   running-mods/manual-installation
+   running-mods/installing-mods
+   running-mods/multiplayer-blas1
+   running-mods/multiplayer-blas2
 
 .. toctree::
    :caption: Creating mods for Blasphemous 1

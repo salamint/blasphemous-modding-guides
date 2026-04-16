@@ -1,3 +1,0 @@
-The Blasphemous Modding Installer
-===================================
-
