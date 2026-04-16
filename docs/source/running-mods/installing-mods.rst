@@ -1,4 +1,4 @@
-Installing Mods for Blasphemous and Blasphemous II
+Installing Mods
 ===================================
 
 There are multiple ways to download and install mods for both games.

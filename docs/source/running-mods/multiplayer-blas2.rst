@@ -1,3 +1,3 @@
-Playing with multiplayer on Blasphemous II
+Multiplayer on Blasphemous II
 ===================================
 
