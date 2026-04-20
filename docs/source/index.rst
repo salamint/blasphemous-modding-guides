@@ -126,3 +126,22 @@ Where do I start?
 
 It depends on your needs.
 
+[TODO]
+
+By the way
+--------
+
+I don't get any money from this, all of my projects are free and open-source,
+I don't have any donations box either, this is purely for enjoyment and helping
+others.
+
+Also no generative AI has been used to write everything here. Not even a little.
+I may use a translator for some words but it's all me and my C1 level English.
+
+And because of that, these guides may contain errors, if you see one and one to
+report it, it'd make me happy and help others by improving the quality of the
+guides.
+
+You can open an issue or pull request on the repository for this guide or
+contact me via Discord.
+
