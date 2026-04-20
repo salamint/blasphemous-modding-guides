@@ -32,6 +32,11 @@ The recommended way to install mods on Windows is through the
 The README of this project also contains the information you need to install it
 and use it, but it doesn't hurt to explain it here in more details.
 
+There is also this awesome YouTube video tutorial made by **Xanathar865**:
+
+.. raw:: html
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/q1XNpTapLPg?si=MEwT_X3hjxZSycUW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 Using the ``blasmodcli`` command line (Linux)
 --------
 

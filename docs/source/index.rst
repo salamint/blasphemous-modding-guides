@@ -36,13 +36,6 @@ Welcome
 
    creating-mods-b2/index
 
-.. toctree::
-   :caption: Mod documentations
-   :maxdepth: 3
-   :hidden:
-
-   mod-documentations/weapon-events-framework
-
 Welcome to the **Blasphemous Modding Guides**!
 
 This is a documentation compiling guides for everyone that wants to use mods for
