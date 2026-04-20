@@ -7,6 +7,7 @@ Welcome
    :hidden:
 
    general/installing-mods
+   general/mod-development
 
 .. toctree::
    :caption: Blasphemous 1 mods
