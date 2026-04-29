@@ -57,13 +57,56 @@ That is basically all modding is on the *writing* part.
 
 .. _Blasphemous Randomizer Wiki: https://brandenek.github.io/Blasphemous.Randomizer.Wiki/
 
-Great but how to I know which function to patch?
-------------------------------------------------
+How to you know which function to patch? That's a good question.
+First, let's explain how Unity games are compiled.
 
-That's a good question. That's the question we're trying to answer when modding,
-because depending on the tools that help you take a look at the internals of the
-game, the way the game is compiled and distributed, and other factors, it is
-difficult to answer.
+How are Unity games compiled?
+-----------------------------
 
-First, let's explain how Unity games work.
+Games in Unity are usually coded in a programming language called C#. What
+matters is that C# is a language that is compiled into a bytecode called
+"Intermidiate Language" (abbreviated "IL"). This IL cannot be run by your
+computer directly and must run on what's called a runtime. It will translate the
+IL into instructions for you platform and processor.
+
+.. figure:: images/compilation-dotnet.png
+   Compiling a C# source file into IL, then running it through the .NET Runtime.
+
+So in theory, the same C# code compiled into IL can be executed on any machine
+and give the same result. It also has a huge advantage for modding, because
+bytecode is easier to decompile than machine code, and this is very useful to
+find functions to patch or understand how the game works internally. It also
+keeps a lot of symbols and metadata intact, which is very important to be able
+to read the decompiled code.
+
+This is what Blasphemous 1 used, this is the basic approach. For Blasphemous 2
+on the other hand, the game has been compiled using `Il2Cpp`_, which then
+compiles the IL into C++ source code, which is then compiled directly into
+machine code.
+
+.. _Il2Cpp: https://docs.unity3d.com/2022.3/Documentation/Manual/IL2CPP.html
+
+This has a few benefits for the developers, but this makes modding even more
+difficult, because during all of those steps, a lot of metadata and symbols are
+lost, it is practically impossible to decompile the generated assembly back into
+C# source code, and parts of the runtime are mixed with the game's code in the
+final assembly.
+
+.. figure:: images/compilation-il2cpp.png
+   Compiling a C# source file into a C++ source file using Il2Cpp, then into an
+   executable file using g++, and running it directly on the processor.
+
+This is the approach that Blasphemous 2 uses. Because of the big differences
+between those two ways of compiling a game, the tools to load and make mods are
+not the same.
+
+For games compiled with the .NET Framework into IL, which is then ran by a
+runtime, `BepInEx`_ is used to inject the patches into the game and load the
+mods, while tools like `dnSpy`_ are used to decompile the game into C# code.
+
+.. _dnSpy: https://github.com/dnSpy/dnSpy
+
+For games compiled with Il2Cpp into executables, `Melon Loader`_ is used to
+inject the patches into the game and load the mods, while tools like `ghidra`_
+are used to decompile the game into C++ code.
 
